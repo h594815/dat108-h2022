@@ -19,7 +19,7 @@ public class RaceCondition {
 		telleNedTraad.join();
 		
 		System.out.println("Ferdig! Tellerverdi = " + teller.getVerdi());
-
+		//Hei
 	}
 
 }
