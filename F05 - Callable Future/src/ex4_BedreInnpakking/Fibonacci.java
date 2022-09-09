@@ -1,4 +1,4 @@
-package ex5_FlereSamtidig;
+package ex4_BedreInnpakking;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 
 class Fibonacci {
 	
-	private ExecutorService executor;
+	private ExecutorService executor = Executors.newCachedThreadPool();
 	
 	public Future<Long> beregn(int n) {
 		Callable<Long> fibCallable = new Callable<>() {
@@ -16,8 +16,6 @@ class Fibonacci {
 				return new Fibonacci().fib(n);
 			}
 		};
-		
-		executor = Executors.newCachedThreadPool();
 		return executor.submit(fibCallable);
 	}
 	
