@@ -1,4 +1,4 @@
-package no.hvl.lph.dat108.f06;
+package no.hvl.dat108.f06;
 
 public class Person implements Comparable<Person> {
 	

@@ -1,4 +1,4 @@
-package no.hvl.lph.dat108.f06;
+package no.hvl.dat108.f06;
 
 import java.util.Arrays;
 import java.util.Collections;
