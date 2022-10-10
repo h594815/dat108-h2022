@@ -11,6 +11,7 @@
 	<groupId>no.hvl.dat108</groupId>
 	<artifactId>f11c-hiddenparameter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging> <!-- Default er jar -->
 	<name>f11c-hiddenparameter</name>
 	<description>F11c ...</description>
 
@@ -23,11 +24,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+<!-- For embedded, stand-alone og jar. Denne MÅ være med! for kjøring fra Eclipse -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-
+		
+<!-- For deployment og war ...
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
